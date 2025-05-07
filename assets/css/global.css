@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: red;
+    margin: 0;
+    /* Remove default margin */
+    padding-top: 80px;
+    /* Add space between navbar and content */
+    background-color: #f0f0f0;
+    /* Set background color */
+    font-family: 'Arial', sans-serif;
+    /* Set default font */
+}
+
+.social {
+    display: inline-flex;
+    align-items: center;
+    gap:5px;
+}
+
+.cartlink {
+    background-color: rgba(0, 0, 0, 0.6);
+    color:white;
+    
+}
+
+.navbar {
+    position: fixed;
+    /* Fix navbar position */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Ensure navbar is on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #dde1e7;
+    /* Set navigation bar color */
+    color: #1c2636;
+    /* Set text color for buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+}
+
+.navbar .logo img {
+    width: 150px;
+    /* Set logo width */
+    height: auto;
+}
+
+.navbar .logo {
+    margin-right: auto;
+    /* Pushes the logo to the left */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #1c2636;
+    /* Set button text color */
+    font-weight: bold;
+    font-size: 40px;
+    /* Decrease font size for buttons */
+    font-family: 'Poppins', sans-serif;
+    /* Use a more appealing font */
+    background-color: #dde1e7;
+    /* Set button background color */
+    padding: 10px 20px;
+    /* Adjust button padding */
+    border-radius: 5px;
+    /* Add border radius */
+    transition: background-color 0.3s ease;
+    /* Add transition effect */
+}
+
+/* Add hover effect */
+.navbar ul li a:hover {
+    background-color: #cfd7df;
+    /* Change background color on hover */
+}
+
+.content {
+    margin-top: 120px;
+    /* Add space between navbar and content */
+    padding: 20px;
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Distribute items evenly */
+}
+
+/* Add styles for filter section */
+.filter-section {
+    background-color: #828282;
+    /* Set background color for filters */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    /* Set width for each filter section */
+    transition: transform 0.3s ease;
+}
+
+.filter-section:hover {
+    transform: translateY(-5px);
+}
+
+.filter-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #1c2636;
+    /* Set label color */
+    font-family: 'Poppins', sans-serif;
+    /* Use a more appealing font */
+    font-size: 16px;
+    /* Set font size */
+}
+
+.filter-section select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    /* Set select background color */
+    color: #495057;
+    /* Set select text color */
+    font-size: 16px;
+    /* Set font size */
+    appearance: none;
+    /* Remove default arrow */
+    outline: none;
+    /* Remove default focus outline */
+    cursor: pointer;
+    /* Change cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Add transition effect */
+}
+
+/* Add hover effect for select */
+.filter-section select:hover {
+    background-color: #e9ecef;
+    /* Change background color on hover */
+}
+
+/* Add focus effect for select */
+.filter-section select:focus {
+    background-color: #e9ecef;
+    /* Change background color on focus */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #1c2636;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
